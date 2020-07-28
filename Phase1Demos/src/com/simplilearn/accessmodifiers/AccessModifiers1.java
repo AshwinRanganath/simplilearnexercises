@@ -16,6 +16,8 @@ public class AccessModifiers1 {
 	protected void showSalary() {
 		System.out.println("Employee Salary is : "+empSalary);
 	}
+	//showSalary() can be accessed in other packages if its visibility is changed to public
+	
 	public static void main(String[] args) {
 		AccessModifiers1 ams = new AccessModifiers1();
 		System.out.println("Employee ID is: "+ams.getID());
