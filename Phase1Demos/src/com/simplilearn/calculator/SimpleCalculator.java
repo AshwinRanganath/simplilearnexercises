@@ -67,7 +67,7 @@ public class SimpleCalculator {
 				System.out.println("Invalid entry, please select valid option");
 
 		}
-		
+		scan.close();	
 	}
 
 }
