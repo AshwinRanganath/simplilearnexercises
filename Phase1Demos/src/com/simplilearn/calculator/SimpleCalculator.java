@@ -3,18 +3,21 @@ import java.util.*;
 
 public class SimpleCalculator {
 	
+	//add method
 	public static int add(int x, int y) {
 		int result = x+y;
 		System.out.println("Sum of "+x+" and "+y+" is :");
 		return result;
 	}
 	
+	//subtract method
 	public static int subtract(int x, int y) {
 		int result = x-y;
 		System.out.println("Difference between "+x+" and "+y+" is :");
 		return result;
 	}
 	
+	//multiply method
 	public static double multiply(double x,double y) {
 		double result = x*y;
 		System.out.println("Product of "+x+" and "+y+" is :");
@@ -37,6 +40,7 @@ public class SimpleCalculator {
 		System.out.println("3: Multiplication");
 		System.out.println("4: Division");
 		
+		//User input
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter two numbers :");
 		num1 = scan.nextInt();
@@ -45,6 +49,7 @@ public class SimpleCalculator {
 		System.out.println("Enter your choice to perform specific operation");
 		int result = scan.nextInt();
 		
+		//Arithmetic operations based on user input
 		switch(result) {
 		case 1:
 			System.out.println(add(num1, num2));
